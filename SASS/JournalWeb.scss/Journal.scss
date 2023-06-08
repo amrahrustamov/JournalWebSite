@@ -82,6 +82,7 @@ select {
 }
 .contactMenu {
     position: absolute;
+    z-index: 9999;
     width: 100px;
     height: 100px;
     background-color: aquamarine;
