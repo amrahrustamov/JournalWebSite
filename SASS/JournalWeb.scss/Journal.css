@@ -1,1 +1,87 @@
-/*# sourceMappingURL=Journal.css.map */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: aqua;
+}
+
+header {
+  width: 100%;
+  height: 40px;
+  background-color: rgb(255, 0, 221);
+}
+
+.boxInHeader {
+  width: 100%;
+  height: 40px;
+  background-color: blue;
+  display: flex;
+  flex-direction: row;
+}
+
+.leftSectionOfHeader {
+  width: 33.33%;
+  height: 40px;
+  background-color: red;
+}
+
+.centerSectionOfHeader {
+  width: 33.33%;
+  height: 40px;
+  background-color: green;
+}
+
+.rightSectionOfHeader {
+  width: 33.33%;
+  height: 40px;
+  background-color: yellow;
+}
+
+.leftSectionOfHeader {
+  display: flex;
+  flex-direction: row;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+  color: white;
+  align-items: center;
+  justify-content: center;
+}
+
+p {
+  height: 100%;
+  width: 100%;
+  color: white;
+  align-items: center;
+  justify-content: center;
+}
+
+.leftSectionOfHeader div, p {
+  padding: 3%;
+}
+
+.centerSectionOfHeader {
+  display: inline;
+  position: relative;
+  padding-left: 7%;
+  padding-top: 3px;
+}
+
+.currencyChoise {
+  height: 100%;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.euro, .pound, .dollar {
+  display: order 1;
+  margin-left: 60%;
+}/*# sourceMappingURL=Journal.css.map */
