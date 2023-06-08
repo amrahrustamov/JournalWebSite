@@ -3,17 +3,20 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+$maxSizeOfBox: 100%;
+
 body {
     background-color: aqua;
 }
 
 header {
-    width: 100%;
+    width: $maxSizeOfBox;
     height: 40px;
     background-color: rgb(255, 0, 221);
 }
 .boxInHeader {
-    width: 100%;
+    width: $maxSizeOfBox;
     height: 40px;
     background-color: blue;
     display: flex;
@@ -22,17 +25,14 @@ header {
 .leftSectionOfHeader {
     width: 33.33%;
     height: 40px;
-    background-color: red;
 }
 .centerSectionOfHeader {
     width: 33.33%;
     height: 40px;
-    background-color: green;
 }
 .rightSectionOfHeader {
     width: 33.33%;
     height: 40px;
-    background-color: yellow;
 }
 .leftSectionOfHeader {
     display: flex;
@@ -40,16 +40,16 @@ header {
 
 }
 img {
-    height: 100%;
-    width: 100%;
+    height: $maxSizeOfBox;
+    width: $maxSizeOfBox;
     color: white;
     align-items: center;
     justify-content: center;
 }
 p {
-    height: 100%;
-    width: 100%;
-    color: white;
+    height: $maxSizeOfBox;
+    width: $maxSizeOfBox;
+    color: rgb(82, 79, 79);
     align-items: center;
     justify-content: center;
 }
@@ -64,14 +64,48 @@ p {
     
 }
 .currencyChoise {
-    height: 100%;
-    width: 100%;
+    height: $maxSizeOfBox;
+    width: $maxSizeOfBox;
+    position: relative;
 }
 a {
     text-decoration: none;
 }
-.euro, .pound, .dollar {
-    display: order 1;
-    margin-left: 60%;
+select {
+    margin-left: 65%;
+    margin-top: 4%;
+    background-color: blue;
+    color:  rgb(82, 79, 79);
+    width: 30%;
+    border-style: none;
 }
+.contactMenu {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: aquamarine;
+    display: none;
+}
+.contactMenu p {
+    padding: 0;
+    width: 5%;
+    height: 10px;
+    font-size: 80%;
+    margin-bottom: 25%;
+}
+
+
+    /*HOVER START*/
+    .centerSectionOfHeader p:hover {
+        color: white;
+    }
+    .contact p:hover {
+        color: white;
+    }
+    .blog p:hover {
+        color: white;
+    }
+    .contact:hover .contactMenu{
+        display: block;
+    }
 
